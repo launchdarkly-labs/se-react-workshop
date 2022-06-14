@@ -1,7 +1,10 @@
+import { useFlags } from 'launchdarkly-react-client-sdk';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const { darkMode } = useFlags();
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +20,9 @@ function App() {
         >
           Learn React
         </a>
+        <p>
+            Dark mode flag value = {darkMode ? 'true': 'false'}
+        </p>
       </header>
     </div>
   );
