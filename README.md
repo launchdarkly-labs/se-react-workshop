@@ -2,6 +2,7 @@
 
 <p align="left">
     <img width="75" height="100" src="https://ih1.redbubble.net/image.451630689.0249/flat,750x,075,f-pad,750x1000,f8f8f8.u3.jpg">&nbsp;
+    <img width="112" height="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/539px-React-icon.svg.png">&nbsp;
     <img width="100" height="100" src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/b5qnw15lckk72stqydxp">
 </p>
 
