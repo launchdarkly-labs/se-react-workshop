@@ -39,7 +39,7 @@ This repo contains the output of `create-react-app`. The only modifications incl
 | Gravity   | gravity | number | 1, 0.6, 0.3, 0.1 | 0.6 | master |
 | Show Details | show-details | bool | true, false | false | master |
 
-> **_Note_:** It's recommended the facilitator apply a `master` tag to these flags. This will help you secure and maintain them as a reusable 'master' set that cannot be altered by attendees. We'll set up these permissions in the next section. 
+> **Note:** It's recommended the facilitator apply a `master` tag to these flags. This will help you secure and maintain them as a reusable 'master' set that cannot be altered by attendees. We'll set up these permissions in the next section. 
 
 * Next, make a [Clone](https://docs.launchdarkly.com/home/getting-started/feature-flags/?q=clone#cloning-flags) of each of these flags. This will give your participants a set of flags they can then Clone and modify (add/remove Variations, etc.) without altering your originals.
 
@@ -47,7 +47,7 @@ This repo contains the output of `create-react-app`. The only modifications incl
 
 With the flags set up, we need to invite our session attendees to use LaunchDarkly.
 * Go to Account Settings &#8594; Members &#8594; Invite members, and enter the email addresses of your attendees
->**_Important:_** Be sure to set the `Initial role` to **No Access**.
+>**Important:** Be sure to set the `Initial role` to **No Access**.
 * Your attendees should see a page like this after they join via your email Invite: ![no access image](./kc-react-launchdarkly/workshop/docs/images/no-access.png)
 
 Next, we need to assign our session attendees to a Team. 
@@ -109,9 +109,11 @@ To set up Gitpod:
 
 ## Session Walkthrough
 
-The session work will be split into five steps. During each step, we'll make noticable changes to the original/previous codebase and then run the app to see the differences. 
+This session work will be split into five steps. During each step, we'll make noticable changes to the original/previous codebase and then run the app to see the differences. 
 
 Attendees can follow along or simply replace the contents of each file involved in each step with the contents of the file located in that step's folder under `workshop`. For example, to see the final result of step one, replace the app files with the files located in `workshop/step1`. To see the final working app, replace the contents of `src` with the contents of `workshop/final`.
+
+> **Note:** The facilitator should organize the session topics and content how they see fit. This is just one approach. Use these ideas, bring your own, mix and match, make it a double, delete the whole thing, cry.
 
 Here's a basic outline of the tasks and concepts for each step:
 
