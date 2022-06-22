@@ -1,5 +1,8 @@
 # Kansas City React Meetup + LaunchDarkly
 
+<img align="center" width="75" height="100" src="https://ih1.redbubble.net/image.451630689.0249/flat,750x,075,f-pad,750x1000,f8f8f8.u3.jpg">
+<img align="center" width="100" height="100" src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/b5qnw15lckk72stqydxp">
+
 ## Overview
 
 This repo contains the example app we'll use during the [KC React Meetup on 6/22/2022](https://www.meetup.com/kansas-city-react-meetup/events/zrtdtsydcjbdc/).
