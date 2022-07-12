@@ -38,17 +38,17 @@ As a Workshop attendee, you'll need access to a LaunchDarkly Account and Project
 
 | Name      | Key | SDK Availability | Type | Variations | Default | Tag (optional) |
 | --------- | ---- | ---------------- | ---- | ---------- | ------- | ----|
-| Dark Mode | dark-mode | :white_check_mark: "SDKs using Client-side ID" | bool | true, false| false | master |
-| Game Theme| game-theme | :white_check_mark: "SDKs using Client-side ID" | string | Dino, Space | Dino | master |
-| Runner Speed | runner-speed | :white_check_mark: "SDKs using Client-side ID" | number | 2, 6, 8, 12, 24 | 8 | master |
-| Gravity   | gravity | :white_check_mark: "SDKs using Client-side ID" | number | 1, 0.6, 0.3, 0.1 | 0.6 | master |
-| Show Details | show-details | :white_check_mark: "SDKs using Client-side ID" | bool | true, false | false | master |
+| Dark Mode | dark-mode | Client-side ID | bool | true, false| false | master |
+| Game Theme| game-theme | Client-side ID | string | Dino, Space | Dino | master |
+| Runner Speed | runner-speed | Client-side ID | number | 2, 6, 8, 12, 24 | 8 | master |
+| Gravity   | gravity | Client-side ID | number | 1, 0.6, 0.3, 0.1 | 0.6 | master |
+| Show Details | show-details | Client-side ID | bool | true, false | false | master |
 
 ### Code
 
 #### Setup
 
-Attendees can use their favorite editor/IDE for React development to work through the coding exercise.
+Attendees can use their favorite desktop or cloud-based editor/IDE for React development to work through the coding exercise.
 
 While there are many, here are some cloud-based options we've used successfully:
 * [Repl.it](https://replit.com/)
