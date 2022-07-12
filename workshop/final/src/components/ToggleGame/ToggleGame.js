@@ -5,7 +5,7 @@ import Runner from './Runner.js';
 import './ToggleGame.css';
 
 export default function ToggleGame() {
-    const { cloneMeDarkMode, cloneMeGameTheme, cloneMeRunnerSpeed, cloneMeGravity, cloneMeShowDetails } = useFlags();
+    const { darkMode, gameTheme, runnerSpeed, gravity, showDetails } = useFlags();
     const LDClient = useLDClient();
     const oneHundredSprite = 'images/100-percent/100-sprite.png';
     const twoHundredSprite = 'images/200-percent/200-sprite.png';
@@ -21,7 +21,7 @@ export default function ToggleGame() {
     }, []);
 
     useEffect(() => {
-        switch (cloneMeGameTheme.toLowerCase()) {
+        switch (gameTheme.toLowerCase()) {
             case 'space':
                 setSpaceTheme();
                 break;
@@ -30,24 +30,24 @@ export default function ToggleGame() {
                 setTRexTheme();
                 break;
         }
-    }, [cloneMeGameTheme]);
+    }, [gameTheme]);
 
     useEffect(() => {
         const darkModeClass = 'dark-mode';
-        (cloneMeDarkMode) ? document.body.classList.add(darkModeClass) :
+        (darkMode) ? document.body.classList.add(darkModeClass) :
             document.body.classList.remove(darkModeClass);
-    }, [cloneMeDarkMode]);
+    }, [darkMode]);
 
     useEffect(() => {
-        Config.SPEED = cloneMeRunnerSpeed;
-        Runner.instance_.setSpeed(cloneMeRunnerSpeed);
+        Config.SPEED = runnerSpeed;
+        Runner.instance_.setSpeed(runnerSpeed);
         Runner.instance_.update();
-    }, [cloneMeRunnerSpeed]);
+    }, [runnerSpeed]);
 
     useEffect(() => {
-        Runner.instance_.updateConfigSetting('GRAVITY', cloneMeGravity);
+        Runner.instance_.updateConfigSetting('GRAVITY', gravity);
         Runner.instance_.update();
-    }, [cloneMeGravity]);
+    }, [gravity]);
 
     const setTRexTheme = () => {
         setThemeName('T-Rex');
@@ -76,11 +76,11 @@ export default function ToggleGame() {
     };
 
     const GameDetails = () => {
-        return (cloneMeShowDetails) ?
+        return (showDetails) ?
             <>
                 <p>User: {userKey}</p>
-                <p>Speed: {cloneMeRunnerSpeed}</p>
-                <p>Gravity: {cloneMeGravity}</p>
+                <p>Speed: {runnerSpeed}</p>
+                <p>Gravity: {gravity}</p>
             </> : null;
     };
 

@@ -5,7 +5,7 @@ import Runner from './Runner.js';
 import './ToggleGame.css';
 
 export default function ToggleGame() {
-    const { yourDarkModeFlag } = useFlags();
+    const { darkMode } = useFlags();
 
     useEffect(() => {
         if (!Runner.hasOwnProperty('instance_')) {
@@ -16,9 +16,9 @@ export default function ToggleGame() {
 
     useEffect(() => {
         const darkModeClass = 'dark-mode';
-        (yourDarkModeFlag) ? document.body.classList.add(darkModeClass) :
+        (darkMode) ? document.body.classList.add(darkModeClass) :
             document.body.classList.remove(darkModeClass);
-    }, [yourDarkModeFlag]);
+    }, [darkMode]);
 
     return (
         <>

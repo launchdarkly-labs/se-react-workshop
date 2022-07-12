@@ -5,7 +5,7 @@ import Runner from './Runner.js';
 import './ToggleGame.css';
 
 export default function ToggleGame() {
-    const { cloneMeDarkMode, cloneMeGameTheme, cloneMeGravity } = useFlags();
+    const { darkMode, gameTheme, gravity } = useFlags();
     const LDClient = useLDClient();
     const oneHundredSprite = 'images/100-percent/100-sprite.png';
     const twoHundredSprite = 'images/200-percent/200-sprite.png';
@@ -21,7 +21,7 @@ export default function ToggleGame() {
     }, []);
 
     useEffect(() => {
-        switch (cloneMeGameTheme.toLowerCase()) {
+        switch (gameTheme.toLowerCase()) {
             case 'space':
                 setSpaceTheme();
                 break;
@@ -30,18 +30,18 @@ export default function ToggleGame() {
                 setTRexTheme();
                 break;
         }
-    }, [cloneMeGameTheme]);
+    }, [gameTheme]);
 
     useEffect(() => {
         const darkModeClass = 'dark-mode';
-        (cloneMeDarkMode) ? document.body.classList.add(darkModeClass) :
+        (darkMode) ? document.body.classList.add(darkModeClass) :
             document.body.classList.remove(darkModeClass);
-    }, [cloneMeDarkMode]);
+    }, [darkMode]);
 
     useEffect(() => {
-        Runner.instance_.updateConfigSetting('GRAVITY', cloneMeGravity);
+        Runner.instance_.updateConfigSetting('GRAVITY', gravity);
         Runner.instance_.update();
-    }, [cloneMeGravity]);
+    }, [gravity]);
 
     const setTRexTheme = () => {
         setThemeName('T-Rex');

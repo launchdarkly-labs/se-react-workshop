@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const { yourDarkModeFlag } = useFlags();
+  const { darkMode } = useFlags();
 
   return (
     <div className="App">
@@ -21,7 +21,7 @@ function App() {
           Learn React
         </a>
         <p>
-            Dark mode flag value = {yourDarkModeFlag ? 'true': 'false'}
+            Dark mode flag value = {darkMode ? 'true': 'false'}
         </p>
       </header>
     </div>
