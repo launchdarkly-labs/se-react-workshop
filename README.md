@@ -7,9 +7,9 @@
 
 ## Overview
 
-This repo contains a sample app for use during SE-led Workshops.
+This repo contains a sample React app for use during SE-led Workshops.
 
-The Workshop is a guided coding exercise to showcase LaunchDarkly and facilitate learning. Attendees will start from a simple app, progressively add new features to it, then release those features using feature flags.
+This Workshop is a guided coding exercise to showcase LaunchDarkly and facilitate learning. Attendees will start from a simple app, progressively add new features to it, then release those features using feature flags.
 
 ## About the app
 
@@ -45,9 +45,9 @@ As a Workshop attendee, you'll need access to a LaunchDarkly Account to fully pa
 | Gravity   | gravity | number | 1, 0.6, 0.3, 0.1 | 0.6 | master |
 | Show Details | show-details | bool | true, false | false | master |
 
-## Code
+### Code
 
-### Setup
+#### Setup
 
 Attendees can use their favorite editor/IDE for React development to work through the coding exercise.
 
@@ -66,4 +66,6 @@ While there are many, here are some cloud-based options we've used successfully:
 
 This session work will be split into five steps. During each step, we'll make noticable changes to the original/previous codebase and then run the app to see the differences. 
 
-Attendees can follow along or simply replace the contents of each file involved in each step with the contents of the file located in that step's folder under `workshop`. For example, to see the final result of step one, replace the app files with the files located in `workshop/step1`. To see the final working app, replace the contents of `src` with the contents of `workshop/final`.
+Attendees can follow along or simply replace the contents of each file involved in each step with the contents of the file located in that step's folder under `workshop`. 
+
+For example, to see the final result of step one, replace the app files with the files located in `workshop/step1`. To see the final working app, replace the contents of `src` with the contents of `workshop/final`.
